@@ -1,9 +1,9 @@
 {
-    "name": "dasc-syntax",
+    "name": "dynasm-vscode",
     "displayName": "Dynasm C Syntax",
     "description": "LuaJIT Dynasm C Syntax (x64)",
-    "icon": "./icon.png",
-    "version": "0.0.1",
+    "icon": "icon.png",
+    "version": "0.0.2",
     "scripts": {
         "test": ""
     },
