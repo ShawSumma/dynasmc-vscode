@@ -1,0 +1,68 @@
+{
+    "name": "Dynasm C",
+    "scopeName": "source.dasc",
+    "fileTypes": [
+      "dasc"
+    ],
+    "patterns": [
+        {
+            "include": "#macro"
+        },
+        {
+            "include": "#dmacro"
+        },
+        {
+            "include": "#endmacro"
+        },
+        {
+            "include": "source.c"
+        }
+    ],
+    "repository": {
+        "macro": {
+            "name": "meta.macro.dasc",
+            "match": "\\|\\s*\\.(macro|define)\\s*([a-zA-Z_][a-zA-Z0-9_]*)((?:,.*)*)",
+            "captures": {
+                "1": {
+                    "name": "keyword.control.dasc"
+                },
+                "2": {
+                    "name": "entity.name.function.dasc"
+                },
+                "3": {
+                    "patterns": [
+                        {
+                            "name": "variable.parameter.dasc",
+                            "match": "(?<=,)[^,]*"
+                        }
+                    ]
+                }
+            }
+        },
+        "endmacro": {
+            "match": "\\|\\s*\\.(endmacro|endif)",
+            "captures": {
+                "1": {
+                    "name": "keyword.control.dasc"
+                }
+            }
+        },
+        "dmacro": {
+            "name": "source.dasc",
+            "match": "\\.(actionlist|align|arch|byte|capture|dumpcapture|dword|elif|else|error|externnames|fatal|globalnames|globals|if|include|nop|sbyte|section|space|type|word)(.*)",
+            "captures": {
+                "1": {
+                    "name": "keyword.control.dasc"
+                },
+                "2": {
+                    "patterns": [
+                        {
+                            "name": "variable.parameter.dasc",
+                            "match": "(?<=,| )[^,]*"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
