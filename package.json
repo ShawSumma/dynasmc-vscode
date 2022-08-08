@@ -22,17 +22,24 @@
     },
     "publisher": "4984",
     "contributes": {
-        "languages": [{
-            "id": "dasc",
-            "aliases": ["dasc", "dynasmc"],
-            "extensions": [".dasc"],
-            "configuration": "./language-configuration.json"
-        }],
+        "languages": [
+            {
+                "id": "dasc",
+                "aliases": ["dasc", "dynasmc"],
+                "extensions": [".dasc"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
         "grammars": [
             {
                 "language": "dasc",
                 "scopeName": "source.dasc",
                 "path": "./syntax/dasc.tmLanguage.json"
+            },
+            {
+                "language": "c",
+                "scopeName": "source.cbase",
+                "path": "./syntax/cbase.tmLanguage.json"
             }
         ]
     },
