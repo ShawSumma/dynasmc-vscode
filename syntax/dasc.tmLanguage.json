@@ -28,6 +28,31 @@
         }
     ],
     "repository": {
+        "all": {
+            "patterns": [
+                {
+                    "include": "#dmacro"
+                },
+                {
+                    "include": "#macro"
+                },
+                {
+                    "include": "#endmacro"
+                },
+                {
+                    "include": "#instr"
+                },
+                {
+                    "include": "#macrouse"
+                },
+                {
+                    "include": "#label"
+                },
+                {
+                    "include": "source.cbase"
+                }
+            ]
+        },
         "label": {
             "patterns": [
                 {
@@ -50,6 +75,14 @@
         },
         "register": {
             "patterns": [
+                {
+                    "name": "constant.language.register.xmm",
+                    "match": "\\b(xmm[2-9]|xmm1[0-5]?|xmm0)\\b"
+                },
+                {
+                    "name": "constant.language.register.ymm",
+                    "match": "\\b(ymm[2-9]|ymm1[0-5]?|ymm0)\\b"
+                },
                 {
                     "name": "constant.language.register.b64",
                     "match": "\\b(rax|rbx|rcx|rdx|rsi|rdi|rsp|rbp|rip|r[2-9]|r1[0-5]?|r0)\\b"

@@ -3,7 +3,7 @@
     "displayName": "DynasmC (arch x64)",
     "description": "LuaJIT Dynasm C Syntax (x64)",
     "icon": "icon.png",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "scripts": {
         "test": ""
     },
