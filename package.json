@@ -1,8 +1,8 @@
 {
     "name": "dasc-syntax",
     "displayName": "Dynasm C Syntax",
-    "description": "LuaJIT Dynasm C Syntax",
-    "icon": "icon.png",
+    "description": "LuaJIT Dynasm C Syntax (x64)",
+    "icon": "./icon.png",
     "version": "0.0.1",
     "scripts": {
         "test": ""
