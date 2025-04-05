@@ -12,23 +12,32 @@
 		"textmate",
 		"highlighting",
 		"coloring",
-		"color"
+		"color",
+		"dasc"
 	],
 	"engines": {
-		"vscode": "^1.99.0"
+		"vscode": "^1.85.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ShawSumma/dynasmc-vscode.git"
 	},
 	"publisher": "4984",
 	"contributes": {
-	  "languages": [{
-		"id": "dasc",
-		"aliases": ["DynasmC", "dasc"],
-		"extensions": [".dasc",".dash"],
-		"configuration": "./language-configuration.json"
-	  }],
-	  "grammars": [{
-		"language": "dasc",
-		"scopeName": "source.dasc",
-		"path": "./syntax/dasc.tmLanguage.json"
-	  }]
+		"languages": [
+			{
+				"id": "dasc",
+				"aliases": ["DynasmC", "dasc", "dash"],
+				"extensions": [".dasc",".dash"],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "dasc",
+				"scopeName": "source.dasc",
+				"path": "./syntax/dasc.tmLanguage.json"
+			}
+		]
 	}
 }
