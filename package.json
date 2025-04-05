@@ -28,7 +28,7 @@
 	  "grammars": [{
 		"language": "dasc",
 		"scopeName": "source.dasc",
-		"path": "./syntaxes/dasc.tmLanguage.json"
+		"path": "./syntax/dasc.tmLanguage.json"
 	  }]
 	}
 }
